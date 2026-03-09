@@ -6,6 +6,6 @@ app = FastAPI()
 def read_root():
     return {"message": "Hello, World!"}
 
-@app.get("/employees2")
-def get_employees(name: str):
-    return {"message": f"{name}님, 반갑습니다!"}
+@app.get("/employees")
+def get_employees(name):
+    return {f"{name}님, 반갑습니다!"}
